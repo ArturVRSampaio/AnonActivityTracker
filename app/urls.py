@@ -7,6 +7,6 @@ urlpatterns = [
     path("signin", auth_controller.signin, name="signin"),
     path("logout", auth_controller.logout, name="logout"),
 
-    path("/tracker", tracker_controller.index, name="tracker_index"),
-    path("/tracker/new", tracker_controller.newEntry, name="tracker_new"),
+    path("tracker", tracker_controller.index, name="tracker_index"),
+    path("tracker/new", tracker_controller.newEntry, name="tracker_new"),
 ]

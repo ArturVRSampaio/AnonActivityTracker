@@ -36,16 +36,18 @@ class User(AbstractBaseUser):
 
 
 class ActivityType(models.Model):
-    name = models.CharField
-
-
-class Entry(models.Model):
-    user = ''
-    activityType = ''
-    created_at = ''
-    text = ''
+    name = models.CharField()
 
 
 class Group(models.Model):
     name = models.CharField()
     description = models.CharField()
+    owners = models.ManyToManyField(User)
+
+
+class Entry(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    activityType = models.ForeignKey(ActivityType, on_delete=models.CASCADE)
+    group = models.ForeignKey(Group, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    text = models.CharField()
