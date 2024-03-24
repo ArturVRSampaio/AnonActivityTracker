@@ -20,7 +20,7 @@ class User(AbstractBaseUser):
     token = models.CharField()  # random access key
     is_active = models.BooleanField(default=True)
 
-    USERNAME_FIELD = 'key'
+    USERNAME_FIELD = 'token'
     REQUIRED_FIELDS = [alias, token]
 
     objects = UserManager()
