@@ -7,5 +7,5 @@ class TokenAuthBackend(BaseBackend):
         try:
             user = User.objects.get(token=token)
             return user
-        except :
+        except:
             return None

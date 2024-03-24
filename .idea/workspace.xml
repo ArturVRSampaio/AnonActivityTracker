@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596ab68b-af80-466a-bb5d-64af5832c730" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/backends.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/new_user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnonGymTracker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnonGymTracker/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tracker_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/app_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/backends.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/backends.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,15 +44,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/bypass/PycharmProjects/AnonGymTracker/app"
+    "last_opened_file_path": "/home/bypass/PycharmProjects/AnonGymTracker/app/templates"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/templates" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/models" />
       <recent name="$PROJECT_DIR$" />
@@ -98,6 +102,17 @@
       <updated>1711154508334</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
