@@ -1,6 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
-from app.forms import NewGroup, NewEntry, NewActivityType
+from app.forms import NewGroup, NewEntry, NewActivityType, JoinGroupForm
 from app.models import Group, ActivityType, Entry
 
 
@@ -83,3 +83,17 @@ def new_activity_type(request, group_id):
 
     form = NewActivityType()
     return render(request, 'newActivityType.html', {'form': form})
+
+
+@login_required
+def join_group(request):
+    if request.method == 'POST':
+        form = JoinGroupForm(request.POST)
+        if form.is_valid():
+            group_id = form.cleaned_data['group_id']
+            group = get_object_or_404(Group, id=group_id)
+            group.owners.add(request.user)
+            return redirect('group', group_id=group_id)
+    else:
+        form = JoinGroupForm()
+    return render(request, 'join_group.html', {'form': form})

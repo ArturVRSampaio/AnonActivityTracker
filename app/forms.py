@@ -35,3 +35,6 @@ class NewEntry(forms.ModelForm):
             'activityType': forms.Select(attrs={'class': 'form-control'}),
             'text': forms.Textarea(attrs={'class': 'form-control', 'rows': 4})
         }
+
+class JoinGroupForm(forms.Form):
+    group_id = forms.IntegerField(label='Group ID', required=True)

@@ -10,6 +10,7 @@ urlpatterns = [
     path("logout", auth_views.user_logout, name="user_logout"),
 
     path("groups", app_views.groups, name="groups"),
+    path("join/group", app_views.join_group, name="join_group"),
     path("group/<int:group_id>/", app_views.group, name="group"),
     path("new/entry/<int:group_id>/", app_views.new_entry, name="new_entry"),
 

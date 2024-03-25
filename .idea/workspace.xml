@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596ab68b-af80-466a-bb5d-64af5832c730" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/.idea/AnonGymTracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/.idea/AnonActivityTracker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnonActivityTracker/app/templates/join_group.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/AnonGymTracker/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/AnonActivityTracker/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/AnonGymTracker/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/AnonActivityTracker/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/AnonGymTracker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/AnonActivityTracker/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/AnonGymTracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/AnonActivityTracker/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/AnonGymTracker/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/AnonActivityTracker/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/app/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/app/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/app/templates/base/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/app/templates/base/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/app/templates/group.html" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/app/templates/group.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/app/views/app_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/app/views/app_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AnonActivityTracker/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AnonActivityTracker/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,12 +43,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/bypass/PycharmProjects/AnonGymTracker/app/templates",
+    "last_opened_file_path": "/home/bypass/PycharmProjects/AnonActivityTracker/app/templates",
     "settings.editor.selected.configurable": "preferences.sourceCode"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../AnonActivityTracker/app/templates" />
       <recent name="$PROJECT_DIR$/app/templates" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$" />
