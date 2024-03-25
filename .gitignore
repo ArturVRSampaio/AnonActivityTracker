@@ -1,1 +1,2 @@
 .env
+/.docker/postgres_data/
