@@ -6,12 +6,26 @@
     {% bootstrap_javascript %}
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+
+        <style>
+            body {
+                min-height: 100vh;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            .content {
+                flex: 1;
+            }
+    </style>
 </head>
 <body>
     {% include 'base/header.html' %}
+    <div class="content">
     {% block content %}
     {% endblock %}
-
+    </div>
     {% include 'base/footer.html' %}
 </body>
 </html>
