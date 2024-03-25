@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596ab68b-af80-466a-bb5d-64af5832c730" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/templates/auth/signinResponse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/groups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/newActivityType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/newEntry.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/newGroup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/new_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/auth_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auth/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auth/signinResponse.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/signinResponse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/groups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/app_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/app_views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

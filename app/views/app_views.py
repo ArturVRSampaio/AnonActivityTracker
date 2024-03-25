@@ -1,25 +1,25 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("index")
+    return render(request, 'index.html')
 
 
 def groups(request):
-    return HttpResponse("index")
+    return render(request, 'groups.html')
 
 
 def group(request):
-    return HttpResponse("index")
+    return render(request, 'group.html')
 
 
 def newGroup(request):
-    return HttpResponse("new group")
+    return render(request, 'newGroup.html')
 
 
 def newEntry(request):
-    return HttpResponse("new entry")
+    return render(request, 'newEntry.html')
 
 
 def newActivityType(request):
-    return HttpResponse("new activity")
+    return render(request, 'newActivityType.html')

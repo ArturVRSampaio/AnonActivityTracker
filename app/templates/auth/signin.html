@@ -1,7 +1,16 @@
-<form method="post">
-    {% csrf_token %}
-    {{ form.token.label_tag }}
-    {{ form.alias }}
-    {{ form.token.errors }}
-    <button type="submit">submit</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signin</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.token.label_tag }}
+        {{ form.alias }}
+        {{ form.token.errors }}
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
