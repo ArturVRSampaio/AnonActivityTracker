@@ -5,10 +5,6 @@ from app.models import User
 from django.contrib.auth import authenticate, login, logout
 
 
-def index(request):
-    return HttpResponse("index")
-
-
 def user_login(request):
     if request.method == 'GET':
         form = LoginForm()
