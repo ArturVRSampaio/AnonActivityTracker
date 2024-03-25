@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Group</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Group{% endblock %}
+
+{% block content %}
 
     <h1>entries</h1>
     <ul>
@@ -17,5 +15,4 @@
     <a href="{% url 'new_activity_type' %}">new Activity Type</a>
     <a href="{% url 'user_login' %}">login</a>
     <a href="{% url 'signin' %}">signin</a>
-</body>
-</html>
+{% endblock %}

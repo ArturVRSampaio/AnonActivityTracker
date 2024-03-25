@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>NewGroup</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
+{% block title %}NewGroup{% endblock %}
+
+{% block content %}
     <form method="post">
         {% csrf_token %}
         {{ form }}
@@ -14,5 +11,4 @@
 
     <a href="{% url 'user_login' %}">login</a>
     <a href="{% url 'signin' %}">signin</a>
-</body>
-</html>
+{% endblock %}

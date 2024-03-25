@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Groups</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
+{% block title %}Groups{% endblock %}
+
+{% block content %}
     <h1>Groups</h1>
     <ul>
         {% for group in user.group_set.all %}
@@ -16,5 +13,4 @@
     <a href="{% url 'new_group' %}">new group</a>
     <a href="{% url 'user_login' %}">login</a>
     <a href="{% url 'signin' %}">signin</a>
-</body>
-</html>
+{% endblock %}

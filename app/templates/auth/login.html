@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
     <form method="post">
         {% csrf_token %}
         {{ form.token.label_tag }}
@@ -14,6 +13,5 @@
     </form>
     <a href="{% url 'user_login' %}">login</a>
     <a href="{% url 'signin' %}">signin</a>
-</body>
-</html>
 
+{% endblock %}
