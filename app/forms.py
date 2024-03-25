@@ -20,14 +20,15 @@ class NewActivityType(forms.Form):
 class NewEntry(forms.ModelForm):
     class Meta:
         model = Entry
-        fields = ['activityType', 'group', 'text']
+        fields = ['activityType', 'text']
         widgets = {
             'activityType': forms.Select(attrs={'class': 'form-control'}),
-            'group': forms.Select(attrs={'class': 'form-control'}),
             'text': forms.Textarea(attrs={'class': 'form-control', 'rows': 4})
         }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['activityType'].queryset = ActivityType.objects.all()
+        activity_types = ActivityType.objects.all()
+        choices = [(atype.id, atype.name) for atype in activity_types]
+        self.fields['activityType'].choices = choices
 

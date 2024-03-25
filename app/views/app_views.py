@@ -42,18 +42,23 @@ def new_group(request):
 
 
 @login_required
-def new_entry(request):
+def new_entry(request, group_id):
+    group = get_object_or_404(Group, id=group_id)
+    is_owner = group.owners.filter(id=request.user.id).exists()
+    if not is_owner:
+        return redirect('groups')
+
     if request.method == 'POST':
         form = NewEntry(request.POST)
         if form.is_valid():
             entry = Entry()
             entry.activityType = form.cleaned_data['activityType']
-            entry.group = form.cleaned_data['group']
+            entry.group = group
             entry.text = form.cleaned_data['text']
             entry.user = request.user
             entry.save()
 
-            return redirect('index')
+            return redirect('group', group_id=group.id)
 
     form = NewEntry()
     return render(request, 'newEntry.html', {'form': form})
