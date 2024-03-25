@@ -7,3 +7,7 @@ class LoginForm(forms.Form):
 
 class signinForm(forms.Form):
     alias = forms.CharField(max_length=30, label='alias')
+
+class NewGroup(forms.Form):
+    name = forms.CharField(max_length=30, label='name')
+    description = forms.CharField(max_length=30, label='description')
