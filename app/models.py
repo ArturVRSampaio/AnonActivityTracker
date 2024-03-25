@@ -35,14 +35,15 @@ class User(AbstractBaseUser):
         return self.alias
 
 
-class ActivityType(models.Model):
-    name = models.CharField()
-
-
 class Group(models.Model):
     name = models.CharField()
     description = models.CharField()
     owners = models.ManyToManyField(User)
+
+
+class ActivityType(models.Model):
+    name = models.CharField()
+    group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='activityTypes')
 
 
 class Entry(models.Model):

@@ -14,5 +14,5 @@ urlpatterns = [
     path("new/entry/<int:group_id>/", app_views.new_entry, name="new_entry"),
 
     path("group/new", app_views.new_group, name="new_group"),
-    path("activity_type/new", app_views.new_activity_type, name="new_activity_type"),
+    path("activity_type/new/<int:group_id>/", app_views.new_activity_type, name="new_activity_type"),
 ]

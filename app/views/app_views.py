@@ -1,6 +1,5 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
-
 from app.forms import NewGroup, NewEntry, NewActivityType
 from app.models import Group, ActivityType, Entry
 
@@ -22,6 +21,7 @@ def group(request, group_id):
     if not is_owner:
         return redirect('groups')
     return render(request, 'group.html', {'group': group})
+
 
 @login_required
 def new_group(request):
@@ -49,7 +49,7 @@ def new_entry(request, group_id):
         return redirect('groups')
 
     if request.method == 'POST':
-        form = NewEntry(request.POST)
+        form = NewEntry(request.POST, group=group)
         if form.is_valid():
             entry = Entry()
             entry.activityType = form.cleaned_data['activityType']
@@ -60,17 +60,23 @@ def new_entry(request, group_id):
 
             return redirect('group', group_id=group.id)
 
-    form = NewEntry()
+    form = NewEntry(group=group)
     return render(request, 'newEntry.html', {'form': form})
 
 
 @login_required
-def new_activity_type(request):
+def new_activity_type(request, group_id):
+    group = get_object_or_404(Group, id=group_id)
+    is_owner = group.owners.filter(id=request.user.id).exists()
+    if not is_owner:
+        return redirect('groups')
+
     if request.method == 'POST':
         form = NewActivityType(request.POST)
         if form.is_valid():
             activity = ActivityType()
             activity.name = form.cleaned_data['name']
+            activity.group = group
             activity.save()
 
             return redirect('groups')
