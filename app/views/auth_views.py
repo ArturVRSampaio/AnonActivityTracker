@@ -27,6 +27,7 @@ def signin(request):
             alias = form.cleaned_data['alias']
             user = User.objects.create_user(alias)
             user.save()
+            login(request, user)
             return render(request, 'auth/signinResponse.html', {'user': user})
     form = signinForm()
     return render(request, 'auth/signin.html', {'form': form})

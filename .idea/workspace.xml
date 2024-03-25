@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="596ab68b-af80-466a-bb5d-64af5832c730" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnonGymTracker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnonGymTracker/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/0002_activitytype_group_entry.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/auth_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth_views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
