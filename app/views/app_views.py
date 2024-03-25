@@ -26,7 +26,7 @@ def group(request, group_id):
     return render(request, 'group.html', {'group': group})
 
 @login_required
-def newGroup(request):
+def new_group(request):
     if request.method == 'POST':
         form = NewGroup(request.POST)
         if form.is_valid():
@@ -45,10 +45,10 @@ def newGroup(request):
 
 
 @login_required
-def newEntry(request):
+def new_entry(request):
     return render(request, 'newEntry.html')
 
 
 @login_required
-def newActivityType(request):
+def new_activity_type(request):
     return render(request, 'newActivityType.html')
