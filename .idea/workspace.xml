@@ -6,14 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="596ab68b-af80-466a-bb5d-64af5832c730" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnonGymTracker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnonGymTracker/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/auth/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/signin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/auth/signinResponse.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/signinResponse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/group.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/group.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/newActivityType.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/newActivityType.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/newEntry.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/newEntry.html" afterDir="false" />
@@ -50,7 +50,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/bypass/PycharmProjects/AnonGymTracker/app/templates"
+    "last_opened_file_path": "/home/bypass/PycharmProjects/AnonGymTracker/app/templates",
+    "settings.editor.selected.configurable": "preferences.sourceCode"
   }
 }]]></component>
   <component name="RecentsManager">
