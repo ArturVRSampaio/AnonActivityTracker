@@ -1,10 +1,8 @@
-from urllib.parse import urlencode
-
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 
-from app.forms import NewGroup
-from app.models import Group
+from app.forms import NewGroup, NewEntry, NewActivityType
+from app.models import Group, ActivityType, Entry
 
 
 def index(request):
@@ -30,12 +28,11 @@ def new_group(request):
     if request.method == 'POST':
         form = NewGroup(request.POST)
         if form.is_valid():
-            user = request.user
             group: Group = Group()
             group.name = form.cleaned_data['name']
             group.description = form.cleaned_data['description']
             group.save()
-            group.owners.add(user)
+            group.owners.add(request.user)
             group.save()
 
             return redirect('group', group_id=group.id)
@@ -46,9 +43,32 @@ def new_group(request):
 
 @login_required
 def new_entry(request):
-    return render(request, 'newEntry.html')
+    if request.method == 'POST':
+        form = NewEntry(request.POST)
+        if form.is_valid():
+            entry = Entry()
+            entry.activityType = form.cleaned_data['activityType']
+            entry.group = form.cleaned_data['group']
+            entry.text = form.cleaned_data['text']
+            entry.user = request.user
+            entry.save()
+
+            return redirect('index')
+
+    form = NewEntry()
+    return render(request, 'newEntry.html', {'form': form})
 
 
 @login_required
 def new_activity_type(request):
-    return render(request, 'newActivityType.html')
+    if request.method == 'POST':
+        form = NewActivityType(request.POST)
+        if form.is_valid():
+            activity = ActivityType()
+            activity.name = form.cleaned_data['name']
+            activity.save()
+
+            return redirect('groups')
+
+    form = NewActivityType()
+    return render(request, 'newActivityType.html', {'form': form})

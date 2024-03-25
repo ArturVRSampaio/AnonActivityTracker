@@ -5,6 +5,14 @@
     <title>Group</title>
 </head>
 <body>
+
+    <h1>entries</h1>
+    <ul>
+        {% for entry in group.entries.all %}
+            <li>{{ entry.created_at }} {{ entry.user.alias }} {{ entry.activityType.name }}</li>
+        {% endfor %}
+    </ul>
+
     <a href="{% url 'new_entry' %}">new entry</a>
     <a href="{% url 'new_activity_type' %}">new Activity Type</a>
     <a href="{% url 'user_login' %}">login</a>

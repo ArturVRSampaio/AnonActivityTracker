@@ -48,6 +48,6 @@ class Group(models.Model):
 class Entry(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     activityType = models.ForeignKey(ActivityType, on_delete=models.CASCADE)
-    group = models.ForeignKey(Group, on_delete=models.CASCADE)
+    group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='entries')
     created_at = models.DateTimeField(auto_now_add=True)
     text = models.CharField()

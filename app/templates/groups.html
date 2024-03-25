@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Group</title>
+    <title>Groups</title>
 </head>
 <body>
+
+    <h1>Groups</h1>
+    <ul>
+        {% for group in user.group_set.all %}
+            <a href="{% url 'group' group_id=group.id %}"><li>{{ group.name }}</li></a>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'new_group' %}">new group</a>
     <a href="{% url 'user_login' %}">login</a>
     <a href="{% url 'signin' %}">signin</a>
 </body>

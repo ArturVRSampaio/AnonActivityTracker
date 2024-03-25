@@ -1,5 +1,7 @@
 from django import forms
 
+from app.models import Entry, ActivityType
+
 
 class LoginForm(forms.Form):
     token = forms.CharField(max_length=100, label='Token')
@@ -11,3 +13,21 @@ class signinForm(forms.Form):
 class NewGroup(forms.Form):
     name = forms.CharField(max_length=30, label='name')
     description = forms.CharField(max_length=30, label='description')
+
+class NewActivityType(forms.Form):
+    name = forms.CharField(max_length=30, label='name')
+
+class NewEntry(forms.ModelForm):
+    class Meta:
+        model = Entry
+        fields = ['activityType', 'group', 'text']
+        widgets = {
+            'activityType': forms.Select(attrs={'class': 'form-control'}),
+            'group': forms.Select(attrs={'class': 'form-control'}),
+            'text': forms.Textarea(attrs={'class': 'form-control', 'rows': 4})
+        }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['activityType'].queryset = ActivityType.objects.all()
+

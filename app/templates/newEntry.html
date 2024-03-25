@@ -5,6 +5,12 @@
     <title>NewEntry</title>
 </head>
 <body>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">submit</button>
+    </form>
+
     <a href="{% url 'user_login' %}">login</a>
     <a href="{% url 'signin' %}">signin</a>
 </body>
