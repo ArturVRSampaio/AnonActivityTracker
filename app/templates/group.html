@@ -11,7 +11,6 @@
         {% endfor %}
     </ul>
 
-    <a href="{% url 'new_entry' group_id=group.id %}">new entry</a>
-
-    <a href="{% url 'new_activity_type' group_id=group.id %}">new Activity Type</a>
+    <a type="button" class="btn btn-primary" href="{% url 'new_entry' group_id=group.id %}">new entry</a>
+    <a type="button" class="btn btn-primary" href="{% url 'new_activity_type' group_id=group.id %}">new Activity Type</a>
 {% endblock %}

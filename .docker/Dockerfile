@@ -15,4 +15,5 @@ RUN pip install -r requirements.txt
 # port where the Django app runs  
 EXPOSE 8000  
 # start server  
-CMD python manage.py runserver 
+CMD python manage.py migrate
+CMD python manage.py runserver
