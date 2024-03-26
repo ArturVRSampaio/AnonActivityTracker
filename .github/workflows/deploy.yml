@@ -28,6 +28,6 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         script: |
-          /root/AnonActivityTracker
+          cd /root/AnonActivityTracker
           git clean -fd
           docker compose up -d
