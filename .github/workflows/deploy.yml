@@ -29,4 +29,5 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         script: |
           cd /root/AnonActivityTracker
+          docker stop $(docker ps -q)
           docker compose up -d --build
