@@ -23,7 +23,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
       with:
         source: "."
-        target: "/opt/app"
+        target: "/root/AnonActivityTracker"
 
     - name: Executing remote  command
       uses: appleboy/ssh-action@master
