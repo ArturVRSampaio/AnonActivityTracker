@@ -52,3 +52,4 @@ class Entry(models.Model):
     group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='entries')
     created_at = models.DateTimeField(auto_now_add=True)
     text = models.CharField()
+    image_url = models.URLField(blank=True, null=True)

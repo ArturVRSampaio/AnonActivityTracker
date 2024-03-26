@@ -1,7 +1,10 @@
+import os
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 from app.forms import NewGroup, NewEntry, NewActivityType, JoinGroupForm
 from app.models import Group, ActivityType, Entry
+from app.utils import get_s3_client
+import uuid
 
 
 def index(request):
@@ -49,18 +52,30 @@ def new_entry(request, group_id):
         return redirect('groups')
 
     if request.method == 'POST':
-        form = NewEntry(request.POST, group=group)
+        form = NewEntry(request.POST, request.FILES, group=group)
         if form.is_valid():
-            entry = Entry()
-            entry.activityType = form.cleaned_data['activityType']
+            image_file = request.FILES.get('image')
+            entry = form.save(commit=False)
             entry.group = group
-            entry.text = form.cleaned_data['text']
             entry.user = request.user
+
+            if image_file:
+                try:
+                    unique_filename = f"{uuid.uuid4()}{os.path.splitext(image_file.name)[1]}"
+
+                    s3 = get_s3_client()
+                    s3.upload_fileobj(image_file, 'anontracker', unique_filename, ExtraArgs={'ACL': 'public-read'})
+
+                    entry_url = f"https://anontracker.nyc3.digitaloceanspaces.com/anontracker/{unique_filename}"
+                    entry.image_url = entry_url  # Set the image URL
+                except Exception as e:
+                    return redirect('new_entry', group_id=group_id)
+
             entry.save()
-
             return redirect('group', group_id=group.id)
+    else:
+        form = NewEntry(group=group)
 
-    form = NewEntry(group=group)
     return render(request, 'newEntry.html', {'form': form})
 
 

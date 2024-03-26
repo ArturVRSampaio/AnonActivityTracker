@@ -7,3 +7,5 @@ python-dotenv==1.0.1
 soupsieve==2.5
 sqlparse==0.4.4
 typing_extensions==4.10.0
+boto3==1.34.70
+pillow==10.2.0

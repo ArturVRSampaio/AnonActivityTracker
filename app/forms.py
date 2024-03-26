@@ -18,19 +18,18 @@ class NewActivityType(forms.Form):
     name = forms.CharField(max_length=30, label='name')
 
 class NewEntry(forms.ModelForm):
+    image = forms.ImageField(required=False)  # Add this field for the image
+
     def __init__(self, *args, **kwargs):
         group = kwargs.pop('group', None)
         super().__init__(*args, **kwargs)
-        if group:
-            activity_types = ActivityType.objects.filter(group=group)
-            choices = [(atype.id, atype.name) for atype in activity_types]
-            self.fields['activityType'].choices = choices
-        else:
-            self.fields['activityType'].queryset = ActivityType.objects.none()  # No group specified, so set empty queryset
+        activity_types = ActivityType.objects.filter(group=group)
+        choices = [(atype.id, atype.name) for atype in activity_types]
+        self.fields['activityType'].choices = choices
 
     class Meta:
         model = Entry
-        fields = ['activityType', 'text']
+        fields = ['activityType', 'text', 'image']
         widgets = {
             'activityType': forms.Select(attrs={'class': 'form-control'}),
             'text': forms.Textarea(attrs={'class': 'form-control', 'rows': 4})

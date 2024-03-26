@@ -7,7 +7,16 @@
     <h1>entries</h1>
     <ul>
         {% for entry in group.entries.all %}
-            <li>{{ entry.created_at }} {{ entry.user.alias }} {{ entry.activityType.name }}</li>
+            <li>
+                <p>{{ entry.created_at }} {{ entry.user.alias }} {{ entry.activityType.name }}</p>
+                {% if entry.image_url %}
+                <img src="{{ entry.image_url }}">
+                    {% else %}
+                <img >
+                <p>{{entry.image_url}}</p>
+                {% endif %}
+
+            </li>
         {% endfor %}
     </ul>
 

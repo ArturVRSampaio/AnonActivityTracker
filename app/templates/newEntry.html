@@ -3,7 +3,7 @@
 {% block title %}NewEntry{% endblock %}
 
 {% block content %}
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form }}
         <button class="btn btn-primary" type="submit">submit</button>
