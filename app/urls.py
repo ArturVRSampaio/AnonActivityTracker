@@ -1,5 +1,7 @@
+from django.conf.urls.static import static
 from django.urls import path
 
+from AnonActivityTracker import settings
 from app.views import auth_views, app_views
 
 urlpatterns = [
@@ -16,4 +18,4 @@ urlpatterns = [
 
     path("group/new", app_views.new_group, name="new_group"),
     path("activity_type/new/<int:group_id>/", app_views.new_activity_type, name="new_activity_type"),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
