@@ -1,3 +1,4 @@
 .env
 /.docker/postgres_data/
 /staticfiles/
+.idea
