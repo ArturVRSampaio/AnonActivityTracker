@@ -1,13 +1,54 @@
 {% extends 'base/base.html' %}
+{% load static %}
 
 {% block title %}Groups{% endblock %}
 
-{% block content %}
-    <h1>Groups</h1>
-    <ul>
-        {% for group in user.group_set.all %}
-            <a type="button" class="btn btn-primary" href="{% url 'group' group_id=group.id %}"><li>{{ group.name }}</li></a>
-        {% endfor %}
-    </ul>
+{% block css %}
+<style>
+    .mainSquare {
+        display:flex;
 
+        width: 400px;
+        height: 400px;
+        background-color: gray;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        border-radius: 39px 39px 39px 39px;
+        -webkit-border-radius: 39px 39px 39px 39px;
+        -moz-border-radius: 39px 39px 39px 39px;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        height: auto;
+        width: fit-content;
+    }
+
+</style>
+{% endblock%}
+
+{% block content %}
+    <div display="flex">
+        <img src="{% static 'background.jpg' %}">
+
+
+        <h1 style="width: fit-content" class="mx-auto">Groups</h1>
+
+        <div class="mainSquare" >
+            <ul class="list">
+                {% for group in user.group_set.all %}
+                    <a type="button" class="btn btn-primary" href="{% url 'group' group_id=group.id %}"><li>{{ group.name }}</li></a>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
 {% endblock %}

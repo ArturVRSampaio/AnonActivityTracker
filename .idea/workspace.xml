@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596ab68b-af80-466a-bb5d-64af5832c730" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/background.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/groups.html" afterDir="false" />
+    </list>
+    <list id="9d00df59-c8a5-412f-b76a-8341f5db4955" name="Changes by bypass" comment="">
+      <change beforePath="$PROJECT_DIR$/AnonActivityTracker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnonActivityTracker/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/groups.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +31,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/app/templates/groups.html">
+      <ranges>
+        <range start1="1" end1="1" start2="1" end2="2" changelist="9d00df59-c8a5-412f-b76a-8341f5db4955" />
+        <range start1="4" end1="4" start2="5" end2="37" changelist="9d00df59-c8a5-412f-b76a-8341f5db4955" />
+        <range start1="5" end1="11" start2="38" end2="51" changelist="596ab68b-af80-466a-bb5d-64af5832c730" />
+        <range start1="12" end1="12" start2="52" end2="53" changelist="596ab68b-af80-466a-bb5d-64af5832c730" />
+      </ranges>
+    </file>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -33,16 +53,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/bypass/PycharmProjects/AnonActivityTracker&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/bypass/PycharmProjects/AnonActivityTracker",
+    "settings.editor.selected.configurable": "preferences.sourceCode"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/templates" />
@@ -51,17 +72,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\artur\PycharmProjects\AnonActivityTracker\static" />
       <recent name="$PROJECT_DIR$/app/templates/base" />
       <recent name="$PROJECT_DIR$/app/templates" />
       <recent name="$PROJECT_DIR$/app/templates/auth" />
       <recent name="$PROJECT_DIR$/app/views" />
-      <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="AnonActivityTracker" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>

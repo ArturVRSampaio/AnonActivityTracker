@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
-
+        {% block css %}{% endblock %}
         <style>
             body {
                 min-height: 100vh;
