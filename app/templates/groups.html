@@ -10,7 +10,7 @@
 
         width: 400px;
         height: 400px;
-        background-color: gray;
+        background-color: rgba(120,120,120,0.8);
 
         margin-left: auto;
         margin-right: auto;
@@ -35,13 +35,12 @@
 </style>
 {% endblock%}
 
+
+
+
 {% block content %}
-    <div display="flex">
-        <img src="{% static 'background.jpg' %}">
-
-
-        <h1 style="width: fit-content" class="mx-auto">Groups</h1>
-
+        <h1 style="color: white;font-size: 50px;" class="mx-auto">Groups</h1>
+        <h1 style="color: white;font-size: 20px;" class="mx-auto">Escolha seu grupo</h1>
         <div class="mainSquare" >
             <ul class="list">
                 {% for group in user.group_set.all %}
@@ -49,6 +48,4 @@
                 {% endfor %}
             </ul>
         </div>
-
-    </div>
 {% endblock %}
