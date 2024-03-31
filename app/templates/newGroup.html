@@ -3,10 +3,12 @@
 {% block title %}NewGroup{% endblock %}
 
 {% block content %}
-    <form method="post">
-        {% csrf_token %}
-        {{ form }}
-        <button class="btn btn-primary" type="submit">submit</button>
-    </form>
-
+    <h1 class="mx-auto pg-title">New Entry</h1>
+    <div class="mainSquare" >
+        <form method="post">
+            {% csrf_token %}
+            {{ form }}
+            <button class="btn btn-primary" type="submit">submit</button>
+        </form>
+    </div>
 {% endblock %}

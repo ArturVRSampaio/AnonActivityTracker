@@ -4,22 +4,26 @@
 
 {% block content %}
 
-    <h1>entries</h1>
-    <ul>
-        {% for entry in group.entries.all %}
-            <li>
-                <p>{{ entry.created_at }} {{ entry.user.alias }} {{ entry.activityType.name }}</p>
-                {% if entry.image_url %}
-                <img src="{{ entry.image_url }}">
-                    {% else %}
-                <img >
-                <p>{{entry.image_url}}</p>
-                {% endif %}
 
-            </li>
-        {% endfor %}
-    </ul>
+    <h1 class="mx-auto pg-title">Group</h1>
+    <h2 class="mx-auto pg-sub-title">See activities and add new entries</h2>
+    <div class="mainSquare" >
+        <ul class="list">
+            {% for entry in group.entries.all %}
+                <li>
+                    <p>{{ entry.created_at }} {{ entry.user.alias }} {{ entry.activityType.name }}</p>
+                    {% if entry.image_url %}
+                    <img src="{{ entry.image_url }}">
+                        {% else %}
+                    <img >
+                    <p>{{entry.image_url}}</p>
+                    {% endif %}
 
-    <a type="button" class="btn btn-primary" href="{% url 'new_entry' group_id=group.id %}">new entry</a>
-    <a type="button" class="btn btn-primary" href="{% url 'new_activity_type' group_id=group.id %}">new Activity Type</a>
-{% endblock %}
+                </li>
+            {% endfor %}
+        </ul>
+
+        <a type="button" class="btn btn-primary" href="{% url 'new_entry' group_id=group.id %}">new entry</a>
+        <a type="button" class="btn btn-primary" href="{% url 'new_activity_type' group_id=group.id %}">new Activity Type</a>
+    </div>
+    {% endblock %}

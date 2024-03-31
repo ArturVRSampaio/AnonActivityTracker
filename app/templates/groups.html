@@ -4,43 +4,12 @@
 {% block title %}Groups{% endblock %}
 
 {% block css %}
-<style>
-    .mainSquare {
-        display:flex;
-
-        width: 400px;
-        height: 400px;
-        background-color: rgba(120,120,120,0.8);
-
-        margin-left: auto;
-        margin-right: auto;
-
-        border-radius: 39px 39px 39px 39px;
-        -webkit-border-radius: 39px 39px 39px 39px;
-        -moz-border-radius: 39px 39px 39px 39px;
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    .list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        height: auto;
-        width: fit-content;
-    }
-
-</style>
 {% endblock%}
 
 
-
-
 {% block content %}
-        <h1 style="color: white;font-size: 50px;" class="mx-auto">Groups</h1>
-        <h1 style="color: white;font-size: 20px;" class="mx-auto">Escolha seu grupo</h1>
+        <h1 class="mx-auto pg-title">Groups</h1>
+        <h2 class="mx-auto pg-sub-title">Enter your group</h2>
         <div class="mainSquare" >
             <ul class="list">
                 {% for group in user.group_set.all %}
