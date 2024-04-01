@@ -1,24 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
-
         <style>
             body {
+                background-image: url({% static 'background.jpg' %});
+                background-size: cover;
+                background-repeat: no-repeat;
                 min-height: 100vh;
+
                 margin: 0;
                 padding: 0;
                 display: flex;
                 flex-direction: column;
             }
+
             .content {
+                display: flex;
                 flex: 1;
+
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .mainSquare {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 30px;
+
+
+                min-width: 400px;
+                min-height: 400px;
+
+                background-color: rgba(120,120,120,0.8);
+
+                border-radius: 39px 39px 39px 39px;
+                -webkit-border-radius: 39px 39px 39px 39px;
+                -moz-border-radius: 39px 39px 39px 39px;
+
+            }
+
+            .list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                height: auto;
+                width: fit-content;
+            }
+
+            .pg-title{
+                color: white;
+                font-size: 50px;
+            }
+
+            .pg-sub-title{
+                color: white;
+                font-size: 20px;
             }
     </style>
+
+    {% block css %}{% endblock %}
+
 </head>
 <body>
     {% include 'base/header.html' %}

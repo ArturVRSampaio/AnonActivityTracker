@@ -3,11 +3,10 @@
 {% block title %}Title{% endblock %}
 
 {% block content %}
-    <h1>
-        new user created
-    </h1>
-
-    <p>welcome {{ user.alias }}</p>
-    <p>this is your token, keep it safe, keep it secret {{ user.token }}</p>
+    <h1 class="mx-auto pg-title">new user created</h1>
+    <div class="mainSquare" >
+        <p>welcome {{ user.alias }}</p>
+        <p>this is your token, keep it safe, keep it secret {{ user.token }}</p>
+    </div>
 
 {% endblock %}
