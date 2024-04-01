@@ -3,13 +3,14 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
-
-    <form method="post">
-        {% csrf_token %}
-        {{ form.token.label_tag }}
-        {{ form.token }}
-        {{ form.token.errors }}
-        <button type="submit">Login</button>
-    </form>
-
+    <h1 class="mx-auto pg-title">Login</h1>
+    <div class="mainSquare" >
+        <form method="post">
+            {% csrf_token %}
+            {{ form.token.label_tag }}
+            {{ form.token }}
+            {{ form.token.errors }}
+            <button type="submit">Login</button>
+        </form>
+    </div>
 {% endblock %}

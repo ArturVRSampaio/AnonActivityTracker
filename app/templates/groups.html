@@ -11,10 +11,8 @@
         <h1 class="mx-auto pg-title">Groups</h1>
         <h2 class="mx-auto pg-sub-title">Enter your group</h2>
         <div class="mainSquare" >
-            <ul class="list">
-                {% for group in user.group_set.all %}
-                    <a type="button" class="btn btn-primary" href="{% url 'group' group_id=group.id %}"><li>{{ group.name }}</li></a>
-                {% endfor %}
-            </ul>
+            {% for group in user.group_set.all %}
+                <a  class="btn btn-primary" href="{% url 'group' group_id=group.id %}">{{ group.name }}</a>
+            {% endfor %}
         </div>
 {% endblock %}

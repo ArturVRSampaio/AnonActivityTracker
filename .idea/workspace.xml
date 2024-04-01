@@ -6,14 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="596ab68b-af80-466a-bb5d-64af5832c730" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auth/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auth/signinResponse.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auth/signinResponse.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/group.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/group.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/groups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/join_group.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/join_group.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/newActivityType.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/newActivityType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/newEntry.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/newEntry.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/newGroup.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/newGroup.html" afterDir="false" />
     </list>
     <list id="9d00df59-c8a5-412f-b76a-8341f5db4955" name="Changes by bypass" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +52,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "agatha",
     "last_opened_file_path": "C:/Users/artur/PycharmProjects/AnonActivityTracker/app",
-    "settings.editor.selected.configurable": "preferences.sourceCode"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">

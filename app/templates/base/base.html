@@ -7,20 +7,19 @@
     {% bootstrap_javascript %}
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
-        {% block css %}{% endblock %}
         <style>
             body {
-            background-image: url({% static 'background.jpg' %});
-            background-size: cover;
-            background-repeat: no-repeat;
+                background-image: url({% static 'background.jpg' %});
+                background-size: cover;
+                background-repeat: no-repeat;
                 min-height: 100vh;
+
                 margin: 0;
                 padding: 0;
                 display: flex;
                 flex-direction: column;
-
-
             }
+
             .content {
                 display: flex;
                 flex: 1;
@@ -32,20 +31,21 @@
 
             .mainSquare {
                 display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 30px;
 
-                width: 400px;
-                height: 400px;
+
+                min-width: 400px;
+                min-height: 400px;
+
                 background-color: rgba(120,120,120,0.8);
-
-                margin-left: auto;
-                margin-right: auto;
 
                 border-radius: 39px 39px 39px 39px;
                 -webkit-border-radius: 39px 39px 39px 39px;
                 -moz-border-radius: 39px 39px 39px 39px;
 
-                justify-content: center;
-                align-items: center;
             }
 
             .list {
@@ -66,9 +66,10 @@
                 color: white;
                 font-size: 20px;
             }
-
-
     </style>
+
+    {% block css %}{% endblock %}
+
 </head>
 <body>
     {% include 'base/header.html' %}
